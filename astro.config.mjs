@@ -4,22 +4,30 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://luisjg.github.io',
+	base: '/roster-docs',
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'Class Roster Docs',
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/luisjg/roster-docs' }],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'API Reference',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Dashboard API', link: '/api/dashboard-api'},
 					],
 				},
-				{
-					label: 'Reference',
-					items: [{ autogenerate: { directory: 'reference' } }],
-				},
+				// {
+				// 	label: 'Guides',
+				// 	items: [
+				// 		// Each item here is one entry in the navigation menu.
+				// 		{ label: 'Example Guide', slug: 'guides/example' },
+				// 	],
+				// },
+				// {
+				// 	label: 'Reference',
+				// 	items: [{ autogenerate: { directory: 'reference' } }],
+				// },
 			],
 		}),
 	],
