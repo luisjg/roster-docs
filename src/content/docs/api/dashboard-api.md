@@ -40,7 +40,7 @@ This API adopts the proposed HTTP `QUERY` method (IETF draft) for fetching recor
   "status": "present" 
 }
 ```
-*(Valid status values: `"present"`, `"absent"`, or `"tardy"`)*
+*(Valid status values: `"present"`, `"absent"`, `"tardy"`, or `"excused"`)*
 
 ---
 
